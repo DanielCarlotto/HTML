@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <fieldset>
+                <legend>Dados gerais</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" minlength="3" id="nome"/>
+
+                <label for="Data_Nascimento">Data de nascimento:</label>
+                <input  type="date" id="Data_Nascimento" name="Nascimento"/>
+
+                <label for="cpf">CPF:</label>
+                <input type="cpf" minlength="11" id="cpf"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="Tipo_Endereco">Tipo:</label>
+                <select id="Tipo_Endereco">
+                    <option value="">Selecione:</option>
+                    <option value="">Rua:</option>
+                    <option value="">Estrada:</option>
+                    <option value="">Rodovia:</option>
+                    <option value="">Outros:</option>
+                </select>
+
+                <label for="Lagradouro_endereco">Lagradouro:</label>
+                <input  type="text" id="Lagradouro_endereco"/>
+
+                <label for="Numero_Endereco">Numero:</label>
+                <input  type="text" id="Numero_Endereco"/>
+
+                <label for="Complemento_Endereco">Complemento:</label>
+                <input  type="text" id="Complemento_Endereco"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fale conosco</legend>
+
+                <label for="msg">Mensagem:</label>
+                <textarea type="tex" id="msg"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Enviar sua Mensagem</button>
+                <button type="reset">Limpar o formulario</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
